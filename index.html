@@ -1,1 +1,182 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap portfolio site</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="portfolio.css" type="text/css">
+</head>
+<body>
+<!--Nav bar-->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+ <div class="container">
+  <div class="navbar-header">
+   <a class="navbar-brand">Michael Forde</a>
+  </div>
+  <div>
+   <ul class="nav navbar-nav navbar-right">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+   </ul>
+  </div>
+ </div>
+</nav>
+<!--Home section-->
+<div id="home" class="container-fluid">
+ <div class="text-vcenter">
+  <div class="page-header">
+   <h1>Welcome!</h1>
+   <h3>Make yourself comfortable while I show you a few things I've been working on.</h3>
+  </div>
+  <div class="container" id="button-box">
+   <div class="btn-group-lg" role="group" aria-label="...">
+    <button type="button" class="btn btn-custom hvr-grow"><i class="fa fa-twitter"></i> Twitter</button>
+    <button type="button" class="btn btn-custom hvr-grow"><i class="fa fa-github"></i> Github</button>
+    <button type="button" class="btn btn-custom hvr-grow"><i class="fa fa-linkedin"></i> Linkedin</button>
+    <button type="button" class="btn btn-custom hvr-grow"><i class="fa fa-fire fa-fw"></i> freeCodeCamp</button>
+   </div>
+  </div>
+ </div>
+</div>
+<!--About section -->
+<div id="about" class="pad-section">
+ <div class="container">
+  <div id="about-header" class="header">
+   <h1>About me</h1>
+  </div>
+  <div class="row" id="self-intro">
+   <div class="col-sm-6">
+    <p>I've caught the programming bug, and there appears to be no cure!
+     Despite having always had a passion for making things, and keeping up with new technology, I had never previously put the two together.
+     That changed in 2015 however, when I decided enough was enough. I was going to learn how to make cool, internet thingys (*not official terminology).</p>
+   </div>
+   <div class="col-sm-6">
+    <p>This is a site for me to showcase some of the projects I've been working on recently. I am adding to these all the time as I learn new skills, languages, frameworks, and techniques. It's slowly coming together nicely.
+     If you see anything you like, or have any feedback regarding anything here, please get in touch. I'd love to hear from you!
+     </p>
+   </div>
+  </div>
+ </div>
+</div>
+<!--Portfolio section-->
+<div id="portfolio" class="pad section">
+ <div class="container">
+  <div id="portfolio-header" class="header">
+   <h1>Portfolio</h1>
+  </div>
+ </div>
+ <ul class="grid cs-style-3">
+  <li>
+   <figure>
+    <a href="C:\Users\sou\Documents\Tribute page\Tribute page.html" target="_blank">
+    <img src="123.jpg" alt="Thumbnail of tribute page" class=""></a>
+    <figcaption>
+     <h4>HTML tribute site</h4>
+     <span>A tribute site using HTML and CSS about my favourite superhero.</span>
+    </figcaption>
+   </figure>
+  </li>
+  <li>
+   <figure>
+    <a href="C:/Users/sou/Documents/Random%20quote%20generator/proverb%20generator%20twitter%20button%20edit.html" target="_blank">
+    <img src="quote generator.jpg" alt="Thumbnail of quote generator page" class=""></a>
+    <figcaption>
+     <h4>Random proverb generator</h4>
+     <span>A web app introducing interesting Japanese proverbs.</span>
+    </figcaption>
+   </figure>
+  </li>
+  <li>
+   <figure>
+    <a href="C:/Users/sou/Documents/Wikipedia search app/Wikipedia.html" target="_blank">
+    <img src="wikipedia search.jpg" alt="Thumbnail of wikipedia search page" class=""></a>
+    <figcaption>
+     <h4>Wikipedia searcher</h4>
+     <span>A web app using wikipedia's search API to locate and display relevant articles.</span>
+    </figcaption>
+   </figure>
+  </li>
+  <li>
+   <figure>
+    <a href="#">
+    <img src="placeholder.jpg" alt="..." class=""></a>
+    <figcaption>
+     <h4>Thumbnail Headline</h4>
+     <span>Brief thumbnail description</span>
+    </figcaption>
+   </figure>
+  </li>
+  <li>
+   <figure>
+    <a href="#">
+    <img src="placeholder.jpg" alt="..." class=""></a>
+    <figcaption>
+     <h4>Thumbnail Headline</h4>
+     <span>Brief thumbnail description</span>
+    </figcaption>
+   </figure>
+  </li>
+  <li>
+   <figure>
+    <a href="#">
+    <img src="placeholder.jpg" alt="..." class=""></a>
+    <figcaption>
+     <h4>Thumbnail Headline</h4>
+     <span>Brief thumbnail description</span>
+    </figcaption>
+   </figure>
+  </li>
+ </ul>
+</div>
+<!--Contact section-->
+<div id="contact" class="pad section">
+ <div class="container">
+  <div id="contact-header" class="header">
+   <h1>Contact</h1>
+  </div>
+  <div class="row" id="contact-info">
+   <div class="col-lge-12" id="contact-spiel">
+    <p>Don't be a stranger. Get in touch with me through any of the following:</p>
+    <ul id="social-icons">
+     <li class="social-button-item">
+     <a class="btn-twitter btn-social-icon btn" href="#">
+      <i class="fa-twitter fa"></i></a>
+     </li>
+     <li class="social-button-item">
+     <a class="btn-github btn-social-icon btn" href="#">
+      <i class="fa-github fa"></i></a>
+     </li>
+     <li class="social-button-item">
+     <a class="btn-linkedin btn-social-icon btn" href="#">
+      <i class="fa-linkedin fa"></i></a>
+     </li>
+     <li class="social-button-item">
+     <a class="btn-freecodecamp btn-social-icon btn" href="#">
+      <i class="fa-fire fa"></i></a>
+     </li>
+     <li class="social-button-item">
+     <a class="btn-email btn-social-icon btn" href="#">
+      <i class="fa-envelope fa"></i></a>
+     </li>
+     <!--Insert tooltips over icons, so it gives explanation where links go on hover-->
+    </ul>
+   </div>
+  </div>
+ </div>
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

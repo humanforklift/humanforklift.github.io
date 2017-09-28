@@ -1,0 +1,251 @@
+ html, body {
+                height: 100%;
+                weight: 100%;
+                font-family: 'Open Sans','Fjalla One', Tahoma;
+                overflow: scroll;
+                overflow-x: hidden;
+        }
+
+        ::-webkit-scrollbar {
+                width: 0px;
+                background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+                background: #FF0000;
+        }
+
+        .navbar-default {
+                background-color: #D3D3D3;
+                border-color: #C1C1C1;
+        }
+
+        .navbar-default .navbar-brand { color: #000000}
+
+        .navbar-default .navbar-brand:hover { color: #000000}
+
+        .navbar-default .navbar-nav>li>a { color: #000000}
+
+        .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus { color: #000000}
+
+        .navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus { color: #000000}
+
+        .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus { color: #000000}
+
+        .navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus { background-color: #FFFFFF}
+
+        .navbar-brand {
+                font-weight: bold;
+        }
+
+        .navbar-right {
+                font-weight: bold;
+        }
+
+        #home {
+                background: url("various-devices.jpg") no-repeat center center fixed;
+                display: table;
+                height: 100%;
+                position: relative;
+                width: 100%;
+                background-size: cover;
+        }
+
+        .page-header {
+                border-width: 4px;
+                border-color: #C1C1C1;
+                margin: 15%;
+        }
+
+        .text-vcenter {
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+                color: #C1C1C1;
+                margin: 0;
+                padding: 0;
+        }
+
+        .pad-section {
+                padding: 40px 0;
+        }
+
+        #about-header {
+                text-align: center;
+                border-bottom: 4px solid;
+                padding-bottom: 20px;
+        }
+
+        #portfolio-header {
+                text-align: center;
+                color: #C1C1C1;
+                border-bottom: 4px solid #C1C1C1;
+                padding-top: 30px;
+                padding-bottom: 20px;
+        }
+
+        #self-intro {
+                font-size: 18px;
+                padding: 2%;
+        }
+
+        #portfolio {
+                background: url("circuit-board.jpg") no-repeat center center fixed;
+                display: table;
+                height: 100%;
+                position: relative;
+                width: 100%;
+                background-size: cover;
+        }
+
+        .grid {
+                padding: 20px 20px 100px 20px;
+                max-width: 1300px;
+                margin: 0 auto;
+                list-style: none;
+                text-align: center;
+        }
+
+        .grid li {
+                display: inline-block;
+                width: 33%;
+                margin: 0;
+                padding: 10px;
+                text-align: left;
+                position: relative;
+        }
+
+        .grid figure {
+                margin: 0;
+                position: relative;
+        }
+
+        .grid figure img {
+                max-width: 100%;
+                height: 300px;
+                display: block;
+                position: relative;
+        }
+
+        .no-touch .figure:hover img, figure.cs-hover img {
+                transform: translateY(-50px);
+        }
+
+        .grid figcaption {
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 20px;
+                background: #2c3f52;
+                color: #ed4e6e;
+        }
+
+        .grid figcaption h4 {
+                margin: 0;
+                padding: 0;
+                color: #fff;
+        }
+
+        .no-touch .figure:hover figcaption, figure.cs-hover figcaption {
+                opacity: 1;
+                transform: translateY(0px);
+                transition: transform 0.3s, opacity 0.1s;
+        }
+
+        .cs-style-3 figure {
+                overflow:hidden;
+                text-align: center;
+        }
+
+        .cs-style-3 figure img {
+                z-index: 10;
+                transition: transform 0.3s;
+        }
+
+        .cs-style-3 figure:hover img, .cs-style-3 figure.cs-hover img {
+                transform: translateY(-90px);
+        }
+
+        .cs-style-3 figcaption {
+                height: 90px;
+                width: 100%;
+                top: auto;
+                bottom: 0;
+        }
+
+        #button-box {
+                margin-top: -180px;
+                padding: 10px;
+        }
+
+        .btn-custom {
+                background-color: hsl(35, 5%, 61%) !important;
+                background-repeat: repeat-x
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7f7f6", endColorstr="#a09c96");
+                background-image: -khtml-gradient(linear, left top, left bottom, from(#f7f7f6), to(#a09c96));
+                background-image: -moz-linear-gradient(top, #f7f7f6, #a09c96);
+                background-image: -ms-linear-gradient(top, #f7f7f6, #a09c96);
+                background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f6), color-stop(100%, #a09c96));
+                background-image: -webkit-linear-gradient(top, #f7f7f6, #a09c96);
+                background-image: -o-linear-gradient(top, #f7f7f6, #a09c96);
+                background-image: linear-gradient(#f7f7f6, #a09c96);
+                color: black !important;
+                box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+                text-shadow: 0 1px 1px rgba(255, 255, 255, 0.59);
+                -webkit-font-smoothing: antialiased;
+                -webkit-filter: blur(0);
+                font-weight: bold;
+                border: 2px solid black;
+        }
+
+        .hvr-grow {
+                display: inline-block;
+                vertical-align: middle;
+                transform: translateZ(0);
+                box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+                backface-visibility: hidden;
+                -moz-osx-font-smoothing: antialiased;
+                transition-duration: 0.2s;
+                transition-property: transform;
+                -webkit-filter: blur(0);
+        }
+
+        .hvr-grow:hover,
+        .hvr-grow:focus,
+        .hvr-grow:active {
+                background: gray;
+                transform: scale(1.1) translate3d(0,0,0);
+        }
+
+        #contact-header {
+                text-align: center;
+                border-bottom: 4px solid;
+                padding-bottom: 20px;
+        }
+
+        #contact-spiel {
+                font-size: 18px;
+                padding: 2%;
+                text-align: center;
+                list-style-type: none;
+        }
+
+        #contact-spiel ul {
+                text-align: center;
+        }
+
+        #contact-spiel ul li {
+                display: inline;
+                text-align: center;
+        }
+
+        #contact-spiel ul li a {
+                font-size: 18px;
+                border: 2px solid;
+                border-radius: 50%;
+        }
+
+        #contact-spiel ul li a:hover {
+                background: black;
+                color: white;
+        }
