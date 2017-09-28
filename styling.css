@@ -21,19 +21,12 @@
         }
 
         .navbar-default .navbar-brand { color: #000000}
-
         .navbar-default .navbar-brand:hover { color: #000000}
-
         .navbar-default .navbar-nav>li>a { color: #000000}
-
         .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus { color: #000000}
-
         .navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus { color: #000000}
-
         .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus { color: #000000}
-
         .navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus { background-color: #FFFFFF}
-
         .navbar-brand {
                 font-weight: bold;
         }
@@ -248,4 +241,9 @@
         #contact-spiel ul li a:hover {
                 background: black;
                 color: white;
+        }
+
+        #contact-spiel a:visited{
+                color: #337ab7;
+                text-decoration: none;
         }
