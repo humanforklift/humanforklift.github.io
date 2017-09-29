@@ -36,7 +36,7 @@
         }
 
         #home {
-                background: url("various-devices.jpg") no-repeat center center fixed;
+                background: url("images/various-devices.jpg") no-repeat center center fixed;
                 display: table;
                 height: 100%;
                 position: relative;
@@ -83,7 +83,7 @@
         }
 
         #portfolio {
-                background: url("circuit-board.jpg") no-repeat center center fixed;
+                background: url("images/circuit-board.jpg") no-repeat center center fixed;
                 display: table;
                 height: 100%;
                 position: relative;
