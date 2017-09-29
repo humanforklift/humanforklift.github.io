@@ -1,0 +1,151 @@
+html body{
+        background-color: #C0C0C0;
+        font-family: sans-serif;
+        text-align: center;
+        }
+
+h1 {
+        font-family: garamond;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        text-shadow: 2px 2px 2px #888888;
+        color: black;
+}
+
+.big {
+        font-size: 40px;
+}
+
+#heading {
+        margin-top: 10%;
+}
+
+.panel-heading {
+        font-weight: bold;
+}
+
+.resizing-input input, .resizing-input span {
+    font-size: 12px;
+    font-family: Sans-serif;
+    white-space: pre;
+    padding: 5px;
+}
+
+#search-btn {
+        -webkit-animation-duration: .7s;
+        animation-duration: .7s;
+        text-shadow: 2px 2px 2px #888888;
+}
+
+#searchInput {
+        padding: 8px 10px;
+        width: 35%;
+        font-size: medium;
+        margin-top: 10px;
+        border: 2px solid #18BEF5;
+        border-radius: 5px;
+        -webkit-animation-duration: .7s;
+        animation-duration: .7s;
+        box-shadow: 2px 2px 2px #888888;
+}
+
+    @-webkit-keyframes shake {
+        0%, 100% {-webkit-transform: translateX(0);}
+        20%, 60% {-webkit-transform: translateX(-10px);}
+        40%, 80% {-webkit-transform: translateX(10px);}
+    }
+
+    @keyframes shake {
+        0%, 100% {transform: translateX(0);}
+        20%, 60%{transform: translateX(-10px);}
+        40%, 80% {transform: translateX(10px);}
+    }
+
+    .shake {
+                -webkit-animation-name: shake;
+        animation-name: shake;
+    }
+
+#warning {
+        margin-top: 10px;
+        font-family: garamond;
+        text-align: center;
+        font-size: 20px;
+        color: red;
+        font-weight: bold;
+}
+
+.ui-autocomplete {
+    background: #efeded;
+        font-family: sans-serif;
+        font-size: 16px;
+        border: 2px solid grey;
+    border-radius: 5px;
+        max-width: 35%;
+}
+
+.ui-menu-item.ui-state-focus {
+        background: #d1cfcf;
+    color: black;
+}
+
+.fa-search {
+        margin-left: 10px;
+        cursor: pointer;
+}
+
+#link-container {
+        margin-bottom: 5%;
+}
+
+.link {
+        margin-top: 20px;
+}
+
+#random-link {
+        font-family: garamond;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        text-shadow: 2px 2px 2px #888888;
+}
+
+#random-link:link , #random-link:visited, #random-link:active {
+    text-decoration: none;
+        color: #FAF205;
+}
+
+#random-link:hover {
+        text-decoration: none;
+        color: #FCF86F;
+}
+
+.panel {
+        border: 2px solid #D3D3D3;
+}
+
+.panel:hover {
+        border: 2px solid #18BEF5;
+        cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+        #heading {
+                margin-top: 1%;
+        }
+
+        #searchInput {
+        padding: 8px 10px;
+        width: 35%;
+        min-width: 195px;
+        font-size: medium;
+        margin-top: 10px;
+        border: 2px solid #18BEF5;
+        border-radius: 5px;
+        -webkit-animation-duration: .7s;
+        animation-duration: .7s;
+        box-shadow: 2px 2px 2px #888888;
+}
+
+}

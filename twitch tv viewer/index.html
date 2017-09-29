@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Twitch TV</title>
+  <meta name="description" content="Twitch TV viewer">
+  <link rel="stylesheet" href="styling.css">
+  <link rel="stylesheet" href="/Users/michaelforde/Documents/Twitch TV viewer/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:200" rel="stylesheet">
+  <script data-require="jquery@>=1.9.1 <3" data-semver="2.1.4" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+</head>
+
+
+<body>
+  <div class="header">
+        <h1>TwitchTV - TV on the internet</h1>
+  </div>
+  <div class="stream-box-container">
+        <div class="stream-box">
+                <div class="tabs">
+                        <button class="tablinks active" id="all">All your streams</button>
+                        <button class="tablinks" id="online">Online</button>
+                        <button class="tablinks" id="offline">Offline</button>
+                        <button class="tablinks" id="search">Find more streams</button>
+                </div>
+                        <div class="search-bar">
+                                <input class="search" placeholder="Search for one of your channels">
+                                <div class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></div>
+                        </div>
+                <div class="channels"></div>
+        </div>
+  </div>
+</body>
+  <script src="scripting.js"></script>
+</html>

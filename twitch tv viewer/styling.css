@@ -1,0 +1,239 @@
+html {
+    background-color: #f9f7f7;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    overflow: hidden;
+}
+
+
+.header {
+    margin: auto;
+    width: 600px;
+    border-bottom: 2px solid #7A18DB;
+    text-align: center;
+}
+
+
+h1 {
+    color: #7A18DB;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 40px;
+    margin-bottom: 3px;
+}
+
+
+.stream-box-container {
+    background-color: inherit;
+    /*border: 1px solid #D0CFD1;*/
+    margin-top: 20px;
+    height: 520px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.stream-box {
+    border: 1px solid #7A18DB;
+    background-color: white;
+    display: -webkit-flex;
+    display: flex;
+    max-height: 500px;
+    width: 650px;
+    margin: auto;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    /*-webkit-justify-content: space-between;
+    justify-content: space-between;*/
+    overflow: auto;
+}
+
+
+div.tabs {
+    overflow: hidden;
+    min-height: 40px;
+    max-height: 50px;
+    border: 1px solid #D0CFD1;
+    background-color: #f1f1f1;
+}
+
+
+button {
+    background-color: inherit;
+    float: left;
+    width: 25%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s
+}
+
+
+#all, #online, #offline{
+    border-right: 1px solid #918a8a;
+}
+
+
+button.active {
+    background-color: #7A18DB;
+    color: white;
+}
+
+.search-bar {
+    margin: 10px;
+    margin-bottom: 0px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    height: 50px;
+    /*flex-grow: 0.06;*/
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.search {
+    border: 1px solid #D0CFD1;
+    /*height: 26px;*/
+    color: #A4A2A6;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-grow: 1;
+    font-size: 14px;
+    padding-left: 8px;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+    border: 1px solid #7A18DB/*#0580fc*/;
+}
+
+.ui-autocomplete {
+    background: #F9F7F7;
+    font-family: 'Work Sans', sans-serif;
+    color: #7A18DB;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #7A18DB;
+    position: inherit;
+}
+
+.ui-menu {
+    list-style: none;
+    display: inline-block;
+    float: left;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.ui-menu-item.ui-state-focus {
+    background: #d1cfcf;
+    color: black;
+}
+
+.ui-helper-hidden-accessible {
+    visibility: hidden;
+}
+
+.search-btn {
+    border: 1px solid #7A18DB/*#D0CFD1*/;
+    background: #7A18DB/*#D0CFD1*/;
+    display: -webkit-flex;
+    display: flex;
+    flex-grow: .2;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.fa-search {
+    color: white;
+}
+
+.channels {
+    margin-top: 2%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+        /*border: 1px solid black;*/
+}
+
+.panel {
+    display: -webkit-flex;
+    display: flex;
+    border-top: 1px solid #D0CFD1;
+    min-height: 50px;
+    cursor: pointer;
+}
+
+img {
+    border: 1px solid grey;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+
+.logo {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+        /*border: 1px solid green;*/
+}
+
+.name {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+        /*border: 1px solid yellow;*/
+    font-weight: bold;
+}
+
+.status {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    /*padding-left: 5px;*/
+    justify-content: center;
+    min-width: 400px;
+    /*border: 1px solid brown;*/
+}
+
+.stream-name {
+    font-style: italic;
+}
+
+.status {
+    text-align: center;
+}
+
+.error {
+    font-weight: bold;
+    color: black;
+}
+
+.online {
+    font-weight: bold;
+    color: green;
+}
+
+.offline {
+    font-weight: bold;
+    color: red;
+}
