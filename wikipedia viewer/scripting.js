@@ -54,7 +54,7 @@ $(document).ready(function() {
 
                 //get results from wikipedia to display
                 source: function(request, response) {
-                        $.getJSON("http://en.wikipedia.org/w/api.php?action=opensearch&origin=*&format=json&search=" + request.term, function(data) {
+                        $.getJSON("https://en.wikipedia.org/w/api.php?action=opensearch&origin=*&format=json&search=" + request.term, function(data) {
                                 response(data[1]);
                         });
                 },
