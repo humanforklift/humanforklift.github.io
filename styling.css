@@ -111,6 +111,7 @@
         .grid figure {
                 margin: 0;
                 position: relative;
+                border-radius: 2%;
         }
 
         .grid figure img {
