@@ -8,7 +8,6 @@ streams.forEach(getInfo);
 function getInfo(username) {
     //get channel information
     $.getJSON("https://wind-bow.gomix.me/twitch-api/channels/" + username + "/?callback=?", function(data) {
-    console.log(data);
 
     //display error message if channel does not exist
     if (data.status == 404 || data.status == null) {

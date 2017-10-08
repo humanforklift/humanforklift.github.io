@@ -44,6 +44,19 @@
                 background-size: cover;
         }
 
+        .profile-pic {
+                margin-top: 8%;
+                margin-bottom: -15%;
+                margin-left: 5%;
+        }
+
+        .me {
+                border-radius: 50%;
+                border: 10px solid white;
+                height: 300px;
+                max-width: 70%;
+        }
+
         .page-header {
                 border-width: 4px;
                 border-color: #C1C1C1;
@@ -168,7 +181,7 @@
         }
 
         #button-box {
-                margin-top: -180px;
+                margin-top: -12%;
                 padding: 10px;
         }
 

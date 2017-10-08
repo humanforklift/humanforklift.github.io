@@ -12,7 +12,7 @@ $(document).ready(function() {
 
         //function to get weather at user's location
         function getWeather(lat, lon) {
-                $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&APPID=3f82316c343df650f0204bf9dfaf2b42&units=metric", function(data) {
+                $.getJSON("https://fcc-weather-api.glitch.me/api/current?lon=" + lon + "&lat=" + lat, function(data) {
                         //store JSON data if available
                         if (storageAvailable) {
                                 sessionStorage.weatherJSON = JSON.stringify(data);
@@ -35,14 +35,13 @@ $(document).ready(function() {
 
         //function to select background according to time and weather
         function chooseBackground(hours, id) {
-                console.log(id === 800);
                 var night = (hours < 5 || hours > 18);
                 //clear skies
-                ((id === 800) && night) ? $("body").css({"backgroundImage":"url('images/clear night sky.jpg')"}) : $("body").css({"backgroundImage":"url('images/sunny.jpg')"});
+                ((id === 800) && night) ? $("body").css({"backgroundImage":"url('images/clear-night-sky.jpg')"}) : $("body").css({"backgroundImage":"url('images/sunny.jpg')"});
                 //few clouds
-                ((id === 801) && night) ? $("body").css({"backgroundImage":"url('images/cloudy night.jpg')"}) : $("body").css({"backgroundImage":"url('images/cloudy.jpg')"});
+                ((id === 801) && night) ? $("body").css({"backgroundImage":"url('images/cloudy-night.jpg')"}) : $("body").css({"backgroundImage":"url('images/cloudy.jpg')"});
                 //heavier clouds
-                ((id >= 802 && id <= 804) && night) ? $("body").css({"backgroundImage":"url('images/cloudy night.jpg')"}) : $("body").css({"backgroundImage":"url('images/dark cloud.jpg')"});
+                ((id >= 802 && id <= 804) && night) ? $("body").css({"backgroundImage":"url('images/cloudy-night.jpg')"}) : $("body").css({"backgroundImage":"url('images/dark-cloud.jpg')"});
                 //thunderstorm
                 if (id >= 200 && id <= 232)
                         $("body").css({"backgroundImage":"url('images/thunderstorm.jpg')"});
@@ -112,14 +111,14 @@ $(document).ready(function() {
         if (storageAvailable) {
 
                 //get user's IP address
-                $.getJSON("http://ip-api.com/json", function(data) {
+                $.getJSON("http://ipapi.co/json", function(data) {
 
                         //generate time info
                         getTime();
 
                         //store user's IP address
-                        sessionStorage.lat = data.lat;
-                        sessionStorage.lon = data.lon;
+                        sessionStorage.lat = data.latitude;
+                        sessionStorage.lon = data.longitude;
                 });
 
                 //clicking the weather button triggers the following events
@@ -155,13 +154,13 @@ $(document).ready(function() {
                 //clicking the weather button triggers the following events
                 $("#getWeather").on("click", function() {
                         //get user's IP address
-                        $.getJSON("http://ip-api.com/json", function(data) {
+                        $.getJSON("https://ipapi.co/json", function(data) {
 
                         //clear screen of all elements
                         $("#content, #get-weather-div, #warning").remove();
 
                         //generate weather info
-                        getWeather(data.lat, data.lon);
+                        getWeather(data.latitude, data.longitude);
 
                         //generate weather display
                         createWeatherDisplay();
