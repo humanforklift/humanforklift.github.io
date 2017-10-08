@@ -111,7 +111,7 @@ $(document).ready(function() {
         if (storageAvailable) {
 
                 //get user's IP address
-                $.getJSON("http://ipapi.co/json", function(data) {
+                $.getJSON("https://ipapi.co/json", function(data) {
 
                         //generate time info
                         getTime();
