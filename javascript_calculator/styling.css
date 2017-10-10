@@ -1,0 +1,133 @@
+html, body {
+        height: 100%;
+        font-family: 'Dosis', Tahoma;
+        overflow: hidden;
+}
+
+body {
+        background-image: -moz-radial-gradient(center, circle closest-corner, #344856 0%, #000 100%);
+        background-image: -o-radial-gradient(center, circle closest-corner, #344856 0%, #000 100%);
+        background-image: -webkit-radial-gradient(center, circle closest-corner, #344856 0%, #000 100%);
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        -o-user-select:none;
+        user-select:none;
+}
+
+#calculator {
+        width: 394px;
+        height: 410px;
+        margin: 150px auto;
+        padding: 20px 20px 10px;
+        background: #D0CEBA;
+        border-style: solid;
+        border-color: #F4F1BB;
+        border-radius: 15px;
+        box-shadow: 0px 4px 3px #575761;
+}
+
+/* Display */
+.top .screen {
+        height: 50px;
+        width: 340px;
+        background: white;
+        float: right;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        border-radius: 3px;
+        /* Create appearance of inset screen */
+        box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+        /* Screen display text */
+        font-size: 26px;
+        font-weight: bold;
+        line-height: 25px;
+        color: black;
+        text-align: right;
+        padding-right: 3px;
+        /* Keeps cursor as normal */
+        cursor: default;
+        /* Prevents user from selecting text/numbers in display */
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        user-select:none;
+}
+
+.working-area {
+        height: 25px;
+        font-size: 16px;
+        /*border: 1px solid black;*/
+}
+
+.buttons  .top{
+        overflow: hidden;
+}
+
+/* Number buttons styling */
+.buttons span, .buttons span.clear  {
+        cursor: pointer;
+        font-size: 20px;
+        float: left;
+        position: relative;
+        top: 0;
+        width: 80px;
+        height: 50px;
+        background: #93C6D6;
+        border-radius: 10px;
+        margin: 0 7px 10px 0;
+        line-height: 45px;
+        text-align: center;
+        color: #AA4465;
+        font-weight: bold;
+        box-shadow: 1px 4px 1px #0B0719;
+        /* Prevent user from selecting text of keys */
+        -webkit-user-select:none;
+        -moz-user-select:none;
+        -ms-user-select:none;
+        user-select:none;
+}
+
+/* Operator button stylings */
+.buttons span.operator, .buttons span.eval {
+        background: #FFBF46;
+}
+
+/* AC and CE button stylings */
+.buttons span.clear {
+        background: #D81E5B;
+        box-shadow: 0px 4px #0B0719;
+        color: #FFCAB1;
+}
+
+/* Hover effects */
+.buttons span:hover {
+        background: #01A9DB;
+        color: white;
+}
+
+.buttons span.eval:hover, .buttons span.operator:hover {
+        background: #FF8000;
+        color: white;
+}
+
+.buttons span.clear:hover {
+        background: #FF0000;
+        color: white;
+}
+
+/* Make buttons appear that they have been pressed down in active state */
+.buttons span:active {
+        box-shadow: 0px 0px #0B0719;
+        top: 4px;
+}
+
+.buttons span.eval:active {
+        box-shadow: 0px 0px #0B0719;
+        top: 4px;
+}
+
+.buttons span.clear:active {
+        box-shadow: 0px 0px #0B0719;
+        top: 4px;
+}
