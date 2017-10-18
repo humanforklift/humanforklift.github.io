@@ -1,3 +1,5 @@
+#Michael Forde
+
 A portfolio page showcasing some personal projects of mine.
 
 Click on the image below to check it out.
