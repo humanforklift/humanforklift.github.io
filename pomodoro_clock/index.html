@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>Pomodoro Clock</title>
+        <link rel="stylesheet" href="styling.css" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="themes/odometer-theme-default.css" rel="stylesheet">
+
+</head>
+<body>
+        <div class="session-length"><i class="fa fa-arrow-up session-arrow"></i></br>Session Length: <span class="odometer session-odometer">25</span></br><i class="fa fa-arrow-down session-arrow"></i></div>
+        <div class="clock">
+                <!-- Create stopwatch buttons-->
+                <div class="buttons-container">
+                        <div class="buttons reset-button"></div>
+                        <div class="label reset-label">Reset</div>
+                        <div class="label start-label">Start/Stop</div>
+                        <div class="buttons start-button"></div>
+                </div>
+                <div class="clock-face">
+                        <div class="playing"></div>
+                        <div class="timer-div">
+                                <div class="timer"></div>
+                        </div>
+                        <h3>Pomodoro </br>Clock</h3>
+                </div>
+        </div>
+        <div class="break-length"><i class="fa fa-arrow-up break-arrow"></i></br>Break Length: <span class="odometer break-odometer">5</span></br><i class="fa fa-arrow-down break-arrow"></i></div>
+</body>
+        <script src="odometer.js"></script>
+        <script src="scripting.js"></script>
+</html>

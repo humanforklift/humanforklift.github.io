@@ -1,0 +1,169 @@
+@font-face {
+    font-family: Digital-7;
+    src: url('digital-7.regular.ttf');
+}
+
+html {
+    background:/*linear-gradient(to top, #D3CBB8, #6D6027)*/ 
+                linear-gradient(
+                rgba(070, 130, 180, 0.65),
+                rgba(095, 158, 160, 0.65)
+                ),
+                
+       url('tomatos.jpeg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;;
+    background-size:cover;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    display:flex;
+    flex:1;
+    min-height: 100vh;
+    align-items: center;
+    -webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
+}
+
+.fa-arrow-up:active {
+    color: red;
+    transition:all 0.08s;
+    transform: scale(1.5);
+}
+
+.fa-arrow-down:active {
+    color: green;
+    transition:all 0.05s;
+    transform: scale(1.5);
+}
+
+.disabled:active {
+    color: black;
+    transform: none;
+}
+
+.session-length {
+    margin-left: 15%;
+    font-size: 26px;
+}
+    
+.clock {
+    width: 30rem;
+    height: 30rem;
+    border:20px solid #444440;
+    border-radius:50%;
+    margin:50px auto;
+    background-color: /*#077ff7*/black;
+    position: relative;
+    padding:2rem;
+    box-shadow:
+        0 0 0 4px rgba(0,0,0,0.1),
+        inset 0 0 0 3px #EFEFEF,
+        inset 0 0 10px black,
+        0 0 10px rgba(0,0,0,0.2);
+}
+
+.buttons-container {
+    display: flex;
+    height: 20rem;
+    width: 30rem;
+    justify-content: center;
+}
+
+.buttons {
+    position: relative;
+    background: #444440;
+    width: 10%;
+    height: 20%;
+    border-radius: 20%;
+    border: ;
+    box-shadow: 
+        0 0 0 4px rgba(68, 68, 64, 0.1);
+}
+
+.reset-button {
+    transform-origin: 100% bottom;
+    transform: translate(-75px) rotate(45deg);
+}
+
+.start-button {
+    transform-origin: 0% bottom;
+    transform: translate(75px) rotate(-45deg);
+}
+
+.buttons:active {
+    top: 5px;
+}
+
+.reset-button:active {
+    left: 5px;
+}
+
+.start-button:active {
+    right: 5px;
+}
+
+.label {
+    color: white;
+    text-shadow: 0px 1px 2px #000;
+    font-size: 20px;
+}
+
+.reset-label {
+    transform: translate(1px, 5px) rotate(-50deg);
+}
+
+.start-label {
+    transform: translate(25px, 11px) rotate(48deg);
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.playing {
+    position: absolute;
+    display: flex;
+    margin-top: -20%;
+    height: 60px;
+    left: 30px;
+    right: 30px;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    /*text-shadow: 1px 2px 20px #374f2b;*/
+}
+
+.timer {
+    border: 1px solid white;
+    height: 85px;
+    margin-top: -35%;
+    background: grey;
+    box-shadow: inset 0px 2px 7px 2px black;
+    font-family: Digital-7;
+    text-align: center;
+    font-size: 105px;
+}
+
+h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0px 0px 1px #fffcff;
+    margin-top: 3%;
+}
+
+.break-length {
+    margin-right: 15%;
+    font-size: 26px;
+}
